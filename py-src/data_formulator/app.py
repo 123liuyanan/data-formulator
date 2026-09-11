@@ -448,7 +448,7 @@ def get_app_config():
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Data Formulator")
-    parser.add_argument("-p", "--port", type=int, default=5567, help="The port number you want to use")
+    parser.add_argument("-p", "--port", type=int, default=21463, help="The port number you want to use")
     parser.add_argument("--host", type=str, default=os.environ.get('HOST', '127.0.0.1'),
         help="Network interface to bind to (default: 127.0.0.1). "
              "Use 0.0.0.0 to accept connections from other machines.")

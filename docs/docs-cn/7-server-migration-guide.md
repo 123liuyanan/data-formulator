@@ -148,7 +148,7 @@ services:
     volumes:
       - df-data:/root/.data_formulator
     ports:
-      - "5567:5567"
+      - "21463:21463"
 
 volumes:
   df-data:

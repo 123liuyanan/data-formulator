@@ -226,7 +226,7 @@ class CustomSsoSecurityManager(SupersetSecurityManager):
 # 第三部分：Data Formulator SSO 桥接端点
 #
 # 流程：
-#   1. DF 前端 window.open(/df-sso-bridge/?df_origin=http://df-host:5567)
+#   1. DF 前端 window.open(/df-sso-bridge/?df_origin=http://df-host:21463)
 #   2. 未登录 → 重定向到 /login/?next=... → SSO → 回到此端点
 #   3. 已登录 → 签发 JWT → postMessage 传给 DF → 关闭弹窗
 # =============================================================================
@@ -252,8 +252,8 @@ _SSO_BRIDGE_TEMPLATE = """<!DOCTYPE html>
 # 允许接收 JWT 的 DF 前端 origin 白名单。
 # 可通过环境变量 DF_ALLOWED_ORIGINS 追加（逗号分隔）。
 _DEFAULT_ALLOWED_ORIGINS = {
-    "http://localhost:5567",
-    "http://127.0.0.1:5567",
+    "http://localhost:21463",
+    "http://127.0.0.1:21463",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     # TODO: 如有远程部署的 DF 前端，在此添加其 origin，或通过环境变量 DF_ALLOWED_ORIGINS 配置

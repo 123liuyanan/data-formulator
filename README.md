@@ -136,7 +136,7 @@ your operating system:
   python -m data_formulator # run
   ```
 
-  Data Formulator will be automatically opened in the browser at [http://localhost:5567](http://localhost:5567).
+  Data Formulator will be automatically opened in the browser at [http://localhost:21463](http://localhost:21463).
 
 - **Option 3: Run with Docker**
 
@@ -144,7 +144,7 @@ your operating system:
   docker compose up --build
   ```
 
-  Open [http://localhost:5567](http://localhost:5567) in your browser. To stop, press `Ctrl+C` or run `docker compose down`.
+  Open [http://localhost:21463](http://localhost:21463) in your browser. To stop, press `Ctrl+C` or run `docker compose down`.
 
 - **Option 4: Working as developer**
   
