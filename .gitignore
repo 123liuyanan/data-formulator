@@ -2,6 +2,7 @@
 *env
 .venv/
 .env
+.data_formulator_runtime/
 .vscode/settings.json
 **/*.ipynb_checkpoints/
 .DS_Store
